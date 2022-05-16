@@ -1,8 +1,7 @@
-import React from 'react';
-import Card from '../../components/Card';
-import Carousel from '../../components/Carousel';
-import Header from '../../components/Header';
-
+import React from "react";
+import Card from "../../components/Card";
+import Carousel from "../../components/Carousel";
+import Header from "../../components/Header";
 
 function index() {
   return (
@@ -11,7 +10,7 @@ function index() {
       <Carousel />
       <Card />
     </>
-  )
+  );
 }
 
 export default index;
