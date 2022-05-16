@@ -46,8 +46,8 @@ function index() {
         />
 
         <Carousel.Caption>
-          <h3>The Promised Neverland é diferente de qualquer obra já feita!</h3>
-          <p>O anime que irá lhe tirar fôlego.</p>
+          <h3>Ichi The Killer é definitivamente uma obra chocante!</h3>
+          <p>Um mangá para poucos!</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
