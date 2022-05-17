@@ -1,11 +1,12 @@
 import "./App.css";
 //import Main from "./pages/Main";
-import Secondaryone from "./pages/Secondaryone";
+//import Secondaryone from "./pages/Secondaryone";
+import SecondaryoneTwo from "./pages/SecondaryoneTwo";
 
 function App() {
   return (
     <div className="App">
-      <Secondaryone />
+      <SecondaryoneTwo />
     </div>
   );
 }

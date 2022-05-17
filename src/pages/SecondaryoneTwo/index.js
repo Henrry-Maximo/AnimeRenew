@@ -1,14 +1,12 @@
 import React from "react";
 import Header from "../../components/Header";
-import Carouseltwo from "../../components/Carouseltwo";
-import Cardtwo from "../../components/Cardtwo";
+import Genero from "../../components/Genero";
 
 function index() {
   return (
     <>
       <Header />
-      <Carouseltwo />
-      <Cardtwo />
+      <Genero />
     </>
   );
 }

@@ -1,0 +1,22 @@
+ul {
+  margin: auto;
+  text-align: left;
+  list-style-type: none;
+  color: red;
+  padding: 20px;
+}
+
+h1 {
+  margin: auto;
+  text-align: left;
+  padding: 40px;
+  color: red;
+}
+
+.bottomGenero {
+  background-image: url(https://images4.alphacoders.com/148/thumb-1920-14808.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: contain;
+  color: #000;
+}
