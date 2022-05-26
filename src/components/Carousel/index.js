@@ -2,45 +2,30 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import "./style.css";
 
-function index() {
+function index(props) {
   return (
     <Carousel>
       <Carousel.Item>
-        <img
-          className="posi_Coro"
-          src="https://images2.alphacoders.com/153/thumb-1920-153272.jpg"
-          alt="First slide"
-        />
+        <img className="posi_Coro" src={props.imgOne} alt="First slide" />
         <Carousel.Caption>
-          <h3>Death Note terá continuação! - Afirma Autor</h3>
-          <p>Death Note, o anime mais famoso e popular de todos os tempos.</p>
+          <h3>{props.titleOne}</h3>
+          <p>{props.descOne}</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="posi_Coro"
-          src="https://images.alphacoders.com/112/thumb-1920-1127205.png"
-          alt="Second slide"
-        />
+        <img className="posi_Coro" src={props.imgTwo} alt="Second slide" />
 
         <Carousel.Caption>
-          <h3>Shigenki no Kyojin promete matar Eren!</h3>
-          <p>
-            Eren é o protagonista da drama, e agora, terá que enfrentar um
-            inimigo superior.
-          </p>
+          <h3>{props.titleTwo}</h3>
+          <p>{props.descTwo}</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="posi_Coro"
-          src="https://images8.alphacoders.com/945/thumb-1920-945424.png"
-          alt="Third slide"
-        />
+        <img className="posi_Coro" src={props.imgThree} alt="Third slide" />
 
         <Carousel.Caption>
-          <h3>The Promised Neverland é diferente de qualquer obra já feita!</h3>
-          <p>O anime que irá lhe tirar fôlego.</p>
+          <h3>{props.titleThree}</h3>
+          <p>{props.descThree}</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

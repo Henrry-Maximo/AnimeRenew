@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function index() {
+function index(props) {
   return (
     <>
       <div className="bottomGenero">

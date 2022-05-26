@@ -1,12 +1,13 @@
 import "./App.css";
 //import Main from "./pages/Main";
 //import Secondaryone from "./pages/Secondaryone";
-import SecondaryoneTwo from "./pages/SecondaryoneTwo";
+//import Gender from "./pages/Gender";
+import Logindisplay from "./pages/Logindisplay";
 
 function App() {
   return (
     <div className="App">
-      <SecondaryoneTwo />
+      <Logindisplay />
     </div>
   );
 }
