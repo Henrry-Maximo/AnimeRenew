@@ -1,12 +1,10 @@
 import React from "react";
 import Card from "../../components/Card";
 import Carousel from "../../components/Carousel";
-import Header from "../../components/Header";
 
 function index() {
   return (
     <>
-      <Header />
       <Carousel
         imgOne="https://images2.alphacoders.com/153/thumb-1920-153272.jpg"
         titleOne="Death Note terá continuação! - Afirma Autor"

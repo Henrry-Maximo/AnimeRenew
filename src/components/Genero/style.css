@@ -1,4 +1,4 @@
-ul {
+.list {
   margin: auto;
   text-align: left;
   list-style-type: none;
@@ -6,7 +6,7 @@ ul {
   padding: 20px;
 }
 
-h1 {
+.title {
   margin: auto;
   text-align: left;
   padding: 40px;

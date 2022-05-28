@@ -1,5 +1,7 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import "./style.css";
 
 function index() {
   return (
@@ -9,18 +11,24 @@ function index() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">ANIME</Nav.Link>
-            <Nav.Link href="#link">MANGÁ</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+            <Nav.Link>
+              <Link to="/"> ANIME </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link to="/Secondaryone"> MANGÁ </Link>
+            </Nav.Link>
+            <NavDropdown title="Opções" id="basic-nav-dropdown">
+              <NavDropdown.Item href="https://anihub.tv/">
+                Animes Online
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item href="https://wall.alphacoders.com/by_category.php?id=3&name=Anime+Pap%C3%A9is+de+Parede&lang=Portuguese">
+                Wallpapers
+              </NavDropdown.Item>
+              <NavDropdown.Item href="https://mangalivre.net/">
+                Mangás Online
+              </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+              <NavDropdown.Item href="/Gender">Gêneros</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

@@ -1,12 +1,10 @@
 import React from "react";
-import Header from "../../components/Header";
 import Carousel from "../../components/Carousel";
 import Card from "../../components/Card";
 
 function index() {
   return (
     <>
-      <Header />
       <Carousel
         imgOne="https://www.nerdsite.com.br/wp-content/uploads/2021/12/uzumaki-1_f8bq.png"
         titleOne="Mangá de Junji Ito - Uzamaki - Ganhará uma animação."

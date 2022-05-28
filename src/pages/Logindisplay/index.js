@@ -1,10 +1,10 @@
 import React from "react";
-import "./style.css";
+import "./stylelogin.css";
 
 function index() {
   return (
-    <div>
-      <div>
+    <div className="structure">
+      <div className="background">
         <form className="positionCenter">
           <h1 className="colorTitle">BEM-VINDO</h1>
           <div className="position_inla">
