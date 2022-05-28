@@ -1,16 +1,9 @@
 import React from "react";
+import "./style.css";
 
 function index() {
   return (
-    <div
-      style={{
-        color: "black",
-        background: "white",
-        marginTop: 10,
-        padding: 20,
-        textAlign: "center",
-      }}
-    >
+    <div className="titleBorder">
       <p>Desenvolvido por @Henrique Maximo, 2022</p>
     </div>
   );

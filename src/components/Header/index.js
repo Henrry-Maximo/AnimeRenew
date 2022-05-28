@@ -12,24 +12,47 @@ function index() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link>
-              <Link to="/"> ANIME </Link>
+              <Link to="/" className="link-menu">
+                {" "}
+                Animes{" "}
+              </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="/Secondaryone"> MANGÁ </Link>
+              <Link to="/Secondaryone" className="link-menu">
+                {" "}
+                Mangás{" "}
+              </Link>
             </Nav.Link>
-            <NavDropdown title="Opções" id="basic-nav-dropdown">
-              <NavDropdown.Item href="https://anihub.tv/">
-                Animes Online
-              </NavDropdown.Item>
-              <NavDropdown.Item href="https://wall.alphacoders.com/by_category.php?id=3&name=Anime+Pap%C3%A9is+de+Parede&lang=Portuguese">
-                Wallpapers
-              </NavDropdown.Item>
-              <NavDropdown.Item href="https://mangalivre.net/">
-                Mangás Online
-              </NavDropdown.Item>
+            <NavDropdown title="Gêneros" id="basic-nav-dropdown">
+              <NavDropdown.Item href="">Ação</NavDropdown.Item>
+              <NavDropdown.Item href="">Artes Marciais</NavDropdown.Item>
+              <NavDropdown.Item href="">Comédia</NavDropdown.Item>
+              <NavDropdown.Item href="">Demônios</NavDropdown.Item>
+              <NavDropdown.Item href="">Drama</NavDropdown.Item>
+              <NavDropdown.Item href="">Espaço</NavDropdown.Item>
+              <NavDropdown.Item href="">Esporte</NavDropdown.Item>
+              <NavDropdown.Item href="">Fantasia</NavDropdown.Item>
+              <NavDropdown.Item href="">Ficção Científica</NavDropdown.Item>
+              <NavDropdown.Item href="">Harém</NavDropdown.Item>
+              <NavDropdown.Item href="">Horror</NavDropdown.Item>
+              <NavDropdown.Item href="">Jogos</NavDropdown.Item>
+              <NavDropdown.Item href="">Josei</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/Gender">Gêneros</NavDropdown.Item>
+              <NavDropdown.Item href="/Figure">Wallpapers</NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link>
+              <Link
+                to="/Logindisplay"
+                style={{
+                  marginLeft: 470,
+                  textDecoration: "none",
+                  color: "gray",
+                }}
+              >
+                {" "}
+                Login{" "}
+              </Link>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

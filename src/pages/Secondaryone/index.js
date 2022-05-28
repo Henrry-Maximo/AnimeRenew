@@ -29,6 +29,15 @@ function index() {
         imgThree="https://kanto.legiaodosherois.com.br/w760-h398-cfill/wp-content/uploads/2016/03/d3d51f20c86a533e743b9ae02b355167.jpg.jpeg"
         titleThree="Gantz"
         descThree="Há momentos que um homem deve lutar mesmo sabendo que a morte se aproxima. - Kurano Kei (Gantz)"
+        imgFour="https://images3.alphacoders.com/799/thumb-1920-799053.png"
+        titleFour="Fullmental Alchemist: Brotherhood"
+        descFour="Quando você é ferido, consegue dormir tranquilo. Quando você fere, não."
+        imgFive="https://images6.alphacoders.com/117/thumb-1920-1171594.jpg"
+        titleFive="Koi To Uso"
+        descFive="Num futuro próximo, quando os jovens no Japão completarem 16 anos, o governo lhes atribui um parceiro matrimonial. As pessoas não precisam passar pelo trabalho de procurar alguém, e todo mundo aceita que o país encontre um parceiro compatível para torná-las felizes."
+        imgSix="https://images.alphacoders.com/629/thumb-1920-629950.jpg"
+        titleSix="Btooom!"
+        descSix="Primeiro, ficam todos tranquilos e ajudam uns aos outros. Mas quando suas vidas estão em perigo, não hesitam em trair seus colegas. Pessoalmente acho que essa é a melhor parte."
       />
     </>
   );
