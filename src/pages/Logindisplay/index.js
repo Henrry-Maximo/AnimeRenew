@@ -1,33 +1,55 @@
 import React from "react";
-import "./style.css";
+import { Button, Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import "./stylelogin.css";
 
-function index() {
+function Index() {
   return (
-    <div>
+    <div className="structure">
       <div>
-        <form className="positionCenter">
-          <h1 className="colorTitle">BEM-VINDO</h1>
-          <div className="position_inla">
-            <label htmlFor="nickName" className="positionUser">
-              Usuário:
-            </label>
-            <input type="text" placeholder="Ryoto_sakamoto" required />
-          </div>
-          <div className="position_inla">
-            <label htmlFor="passaword" className="positionPassaword">
-              Senha:
-            </label>
-            <input type="password" placeholder="@1234" required />
-          </div>
-          <div className="position_inla">
-            <button type="submit" class="btn btn-outline-danger">
-              Login
-            </button>
-          </div>
-        </form>
+        <Form className="positionCenter">
+          <h1 className="colorTitle" style={{ marginTop: 20 }}>
+            Bem-vindo!
+          </h1>
+          <Form className="position_inla">
+            <Form.Group
+              className="mb-3"
+              controlId="formBasicEmail"
+              style={{ margin: 40, marginTop: 0 }}
+            >
+              <Form.Label style={{ marginRight: 210 }}>Usuário:</Form.Label>
+              <Form.Control type="text" placeholder="Digite aqui" required />
+            </Form.Group>
+
+            <Form.Group
+              className="mb-3"
+              controlId="formBasicPassword"
+              style={{ margin: 40, marginTop: 0 }}
+            >
+              <Form.Label style={{ marginRight: 220 }}>Senha:</Form.Label>
+              <Form.Control
+                type="password"
+                placeholder="Digite aqui"
+                required
+              />
+            </Form.Group>
+
+            <Button
+              variant="outline-danger"
+              type="submit"
+              className="position_inla"
+            >
+              Entrar{" "}
+            </Button>
+          </Form>
+
+          <Link to="/Registration" className="link-menu">
+            Criar Conta
+          </Link>
+        </Form>
       </div>
     </div>
   );
 }
 
-export default index;
+export default Index;
