@@ -35,22 +35,25 @@ function index() {
                 Gêneros{" "}
               </Link>
             </Nav.Link>
-            <NavDropdown title="Lista" id="titleGender" >
+            <NavDropdown title="Lista" id="titleGender">
               <NavDropdown.Item href="" to="/Gender">Ação</NavDropdown.Item>
-              <NavDropdown.Item href="">Artes Marciais</NavDropdown.Item>
-              <NavDropdown.Item href="">Comédia</NavDropdown.Item>
-              <NavDropdown.Item href="">Demônios</NavDropdown.Item>
-              <NavDropdown.Item href="">Drama</NavDropdown.Item>
-              <NavDropdown.Item href="">Espaço</NavDropdown.Item>
-              <NavDropdown.Item href="">Esporte</NavDropdown.Item>
-              <NavDropdown.Item href="">Fantasia</NavDropdown.Item>
-              <NavDropdown.Item href="">Ficção Científica</NavDropdown.Item>
-              <NavDropdown.Item href="">Harém</NavDropdown.Item>
-              <NavDropdown.Item href="">Horror</NavDropdown.Item>
-              <NavDropdown.Item href="">Jogos</NavDropdown.Item>
-              <NavDropdown.Item href="">Josei</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="/Figure">Wallpapers</NavDropdown.Item>
+              <NavDropdown title="Gêneros" id="titleGender">
+                <NavDropdown.Item href="">Ação</NavDropdown.Item>
+                <NavDropdown.Item href="">Artes Marciais</NavDropdown.Item>
+                <NavDropdown.Item href="">Comédia</NavDropdown.Item>
+                <NavDropdown.Item href="">Demônios</NavDropdown.Item>
+                <NavDropdown.Item href="">Drama</NavDropdown.Item>
+                <NavDropdown.Item href="">Espaço</NavDropdown.Item>
+                <NavDropdown.Item href="">Esporte</NavDropdown.Item>
+                <NavDropdown.Item href="">Fantasia</NavDropdown.Item>
+                <NavDropdown.Item href="">Ficção Científica</NavDropdown.Item>
+                <NavDropdown.Item href="">Harém</NavDropdown.Item>
+                <NavDropdown.Item href="">Horror</NavDropdown.Item>
+                <NavDropdown.Item href="">Jogos</NavDropdown.Item>
+                <NavDropdown.Item href="">Josei</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/Figure">Wallpapers</NavDropdown.Item>
+              </NavDropdown>
             </NavDropdown>
             <Nav.Link>
               <Link

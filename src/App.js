@@ -12,6 +12,7 @@ import Registration from "./pages/Registration";
 import Gender from "./pages/Gender";
 import ModalGender from "./components/ModalGender";
 
+
 function App() {
   return (
     <div className="App">
@@ -21,17 +22,21 @@ function App() {
           <Route element={<ProtectedRouter />}>
             <Route path="/" element={<Main />} />
             <Route path="/Secondaryone" element={<Secondaryone />} />
+
             <Route path="/Gender" element={<Gender />} />
             <Route path="/Figure" element={<Wallpapers />} />
             <Route path="/ModalGender" element={<ModalGender />} />
+
+            <Route path="/Figure" element={<Wallpapers />} />
           </Route>
           <Route path="/Logindisplay" element={<Logindisplay />} />
           <Route path="/Registration" element={<Registration />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
-      </BrowserRouter> 
-    </div>
+      </BrowserRouter>
+
+    </div >
   );
 }
 
