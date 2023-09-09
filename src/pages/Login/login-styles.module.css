@@ -46,7 +46,7 @@ body {
 }
 
 
-.button23 {
+#button23 {
   background: #000000;
   border: 1px solid #8a211d;
   border-radius: 6px;
@@ -70,14 +70,14 @@ body {
   vertical-align: middle;
 }
 
-.button23:hover,
-.button23:active {
+#button23:hover,
+#button23:active {
   background-color: initial;
   background-position: 0 0;
   color: #ffffff;
 }
 
-.button23:active {
+#button23:active {
   opacity: .5;
 }
 

@@ -44,7 +44,7 @@ function Index() {
           </Form.Group>
 
           <Button
-            className={styles.button23}
+            id={styles.button23}
             type="submit"
           >
             ENTRAR

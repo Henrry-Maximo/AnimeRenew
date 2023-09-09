@@ -41,7 +41,7 @@
     pointer-events: none;
   }
 
-  .button24 {
+  #buttonForRegistration {
     background: #000000;
     border: 1px solid #8a211d;
     border-radius: 6px;
@@ -65,14 +65,14 @@
     vertical-align: middle;
   }
   
-  .button24:hover,
-  .button24:active {
+  #buttonForRegistration:hover,
+  #buttonForRegistration:active {
     background-color: initial;
     background-position: 0 0;
     color: #ffffff;
   }
   
-  .button24:active {
+  #buttonForRegistration:active {
     opacity: .5;
   }
 

@@ -80,7 +80,7 @@ function Index() {
         </Form.Group>
 
         <Button
-          className={styles.button24}
+          id={styles.buttonForRegistration}
           type="submit"
           onClick={CreateUser}
         >
