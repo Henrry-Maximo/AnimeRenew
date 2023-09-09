@@ -1,6 +1,6 @@
 .titleBorder {
-  color: black;
-  background-color: gray;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   margin: auto;
   padding: auto;
   position: fixed;

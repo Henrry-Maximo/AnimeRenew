@@ -5,8 +5,21 @@
 
 #titleGender {
   color: gray;
-<<<<<<< HEAD
   text-decoration: none;
-=======
->>>>>>> f4acd3a2e4452ff1716cd5751ee6bb65f954633b
 }
+
+.displayLogin {
+  position: absolute;
+  margin-left: 110vh;
+}
+
+.displayRegistration {
+  position: absolute;
+  margin-left: 120vh;
+}
+
+/* margin: "auto",
+                  padding: "auto",
+                  marginLeft: 505,
+                  textDecoration: "none",
+                  color: "gray", */

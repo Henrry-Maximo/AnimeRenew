@@ -13,7 +13,7 @@ function index() {
             style={{ width: 25 }}
           ></img>
         </div>
-        <Navbar.Brand style={{ color: "gray" }}>MANGÁ AMIGO</Navbar.Brand>
+        <Navbar.Brand style={{ color: "gray" }}>AnimeRe:new</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -55,20 +55,20 @@ function index() {
                 <NavDropdown.Item href="/Figure">Wallpapers</NavDropdown.Item>
               </NavDropdown>
             </NavDropdown>
-            <Nav.Link>
+            <Nav.Link className="displayLogin">
               <Link
-                to="/Logindisplay"
-                style={{
-                  margin: "auto",
-                  padding: "auto",
-                  marginLeft: 505,
-                  textDecoration: "none",
-                  color: "gray",
-                }}
+                to="/Login"
                 className="link-menu"
               >
-                {" "}
-                Login{" "}
+                LOGIN
+              </Link>
+            </Nav.Link>
+            <Nav.Link className="displayRegistration">
+              <Link
+                to="/Registration"
+                className="link-menu"
+              >
+                REGISTRAR-SE
               </Link>
             </Nav.Link>
           </Nav>
