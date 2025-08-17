@@ -1,69 +1,43 @@
-// criar rotas e gerenciar a navegação entre elas
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-// --------------------------------------------
-
-// estilização padrão para todas as páginas + importação da font: ROBOTO
-import "@fontsource/roboto";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-// --------------------------------------------
 
-// Header && Footer
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-// --------------------------------------------
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-// pages: Login && Registration
-import Login from "./pages/Login";
-import Registration from "./pages/Registration";
-// --------------------------------------------
+import { Error } from "./components/_Default/Error";
+import { Footer } from "./components/_Default/Footer";
+import { Header } from "./components/_Default/Header";
+import { SignIn } from "./pages/_Default/Login";
 
-// pages: página principal (animes); página secundária (mangá)
-import Main from "./pages/Main";
-import Secondaryone from "./pages/Secondaryone";
-// --------------------------------------------
+import { Gender } from "./pages/Gender";
 
-// exibição dos gêneros estabelecidos no banco de dados (só irá funcionar com conexão ao bd estabelecida)
-import Gender from "./pages/Gender";
-// carregar os input's de utilizando de inserição e exclusão de gênero
-import ModalGender from "./components/ModalGender";
-// --------------------------------------------
+import { Animes } from "./pages/Anime";
+import { Mangas } from "./pages/Mangas";
+import { Wallpapers } from "./pages/Wallpapers";
+import { ProtectedRouter } from "./protectedRouter";
+import { Register } from "./pages/_Default/Register";
 
-// página de exibição de wallpapers de animes
-import Wallpapers from "./pages/Wallpapers";
-// --------------------------------------------
-
-// responsável por não deixar o usuário visualizar as páginas da aplicação senão login&registration,
-// enquanto não efetuar login
-import ProtectedRouter from "./protectedRouter";
-// --------------------------------------------
-
-// Se página não existir como endereço oficial da aplicação, executar:
-import Error from "./pages/Error";
-// --------------------------------------------
-
-
-function App() {
+export function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
         <Routes>
+          <Route path="/" element={<SignIn />} />
+          <Route path="/register" element={<Register />} />
           <Route element={<ProtectedRouter />}>
-            <Route path="/" element={<Main />} />
-            <Route path="/Secondaryone" element={<Secondaryone />} />
-            <Route path="/Gender" element={<Gender />} />
-            <Route path="/Figure" element={<Wallpapers />} />
-            <Route path="/ModalGender" element={<ModalGender />} />
-            <Route path="/Figure" element={<Wallpapers />} />
+            <Route element={<Header />} />
+            <Route path="/animes" element={<Animes />} />
+            <Route path="/genders" element={<Gender />} />
+            <Route path="/mangas" element={<Mangas />} />
+            <Route path="/wallpapers" element={<Wallpapers />} />
+            <Route element={<Footer />} />
           </Route>
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Registration" element={<Registration />} />
-          <Route path="*" element={<Error />} />
+
+          <Route
+            path="*"
+            element={<Error number={404} message="Page Not Found." />}
+          />
         </Routes>
-        <Footer />
       </BrowserRouter>
-    </div >
+    </div>
   );
 }
-
-export default App;

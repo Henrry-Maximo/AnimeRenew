@@ -1,7 +1,7 @@
 import React from "react";
 import Figure from "../../components/Figure";
 
-function index() {
+export function Wallpapers() {
   return (
     <>
       <Figure
@@ -29,5 +29,3 @@ function index() {
     </>
   );
 }
-
-export default index;

@@ -1,15 +1,10 @@
-// padrão:
-import React from "react";
 import { useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import styles from "./registro-styles.module.css";
-// ---------------------------------------------
+import styles from "./register.module.css";
 
-// conexão ao backend:
-import api from "../../service/api.js";
-// ---------------------------------------------
+import { server } from "../../../http/index.js";
 
-function Index() {
+export function Register() {
   const [usuario, setUsuario] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -21,7 +16,7 @@ function Index() {
         email,
         password,
       };
-      await api.post("/user", data);
+      await server.post("/user", data);
 
       alert(`Usuário ${usuario} cadastrado com sucesso`);
     } catch (err) {
@@ -90,5 +85,3 @@ function Index() {
     </div>
   );
 }
-
-export default Index;

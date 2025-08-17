@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
-import api from '../../service/api';
+import {server} from '../../http';
 import Table from 'react-bootstrap/Table';
 import "./styleGender.css";
 import ModalUpdateGender from '../../components/ModalGender';
 import ModalDeleteGender from '../../components/ModalDelete';
 
-function Index() {
+export function Gender() {
 
   const [genders, setGenders] = useState([]);
 
@@ -27,7 +27,7 @@ function Index() {
   useEffect(() => {
     //let n1 = 10; | let n2 = 20; | let total = n1 + n2;
     async function getGender() {
-      const { data } = await api.get('/gender');
+      const { data } = await server.get('/gender');
 
       setGenders(data);
     }
@@ -67,5 +67,3 @@ function Index() {
     </>
   );
 }
-
-export default Index;

@@ -1,22 +1,20 @@
-import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./style.css";
 
-function index() {
+export function Header() {
   return (
     <Navbar bg="black" expand="lg">
       <Container>
         <div>
-          <img
+          {/* <img
             src="https://pa1.narvii.com/6408/cc8013ff9129ca7f71bc4a0f7f0fc85d71979773_hq.gif"
             style={{ width: 25 }}
-          ></img>
+          ></img> */}
         </div>
-        <Navbar.Brand style={{ color: "gray" }}>AnimeRe:new</Navbar.Brand>
+        <Navbar.Brand style={{ color: "gray" }}>My Best Anime</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav Link className="me-auto">
             <Nav.Link>
               <Link to="/" className="link-menu">
                 {" "}
@@ -77,7 +75,3 @@ function index() {
     </Navbar>
   );
 }
-
-export default index;
-
-/* rfce - estrutura pronta*/

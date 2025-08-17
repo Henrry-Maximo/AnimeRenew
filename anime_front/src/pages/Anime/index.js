@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../../components/Card";
 import Carousel from "../../components/Carousel";
 
-function index() {
+export function Animes() {
   return (
     <>
       <Carousel
@@ -53,5 +53,3 @@ function index() {
     </>
   );
 }
-
-export default index;
